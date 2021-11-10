@@ -1,0 +1,13 @@
+python manage.py runserver   // Runear la Web
+
+python manage.py createsuperuser   // Crear Usuario Admin
+
+python manage.py makemigrations // ver cambios en BD
+
+python manage.py migrate   //  Guardar cambios en BD
+
+python manage.py startapp 'Nombre'   // Crear aplicación
+
+ 
+
+

@@ -13,6 +13,7 @@ class pelicula(models.Model):
         verbose_name = 'Película'
         verbose_name_plural = 'Películas'
 
+
 class tarjeta(models.Model):
     num_tarj = models.CharField(primary_key = True,max_length = 9)
     saldo = models.IntegerField('Saldo de la tarjeta', null = False, blank = False)
@@ -21,4 +22,18 @@ class tarjeta(models.Model):
     class Meta:
         verbose_name = 'Tarjeta'
         verbose_name_plural = 'Tarjetas'
+
+class cliente(models.Model):
+    idcli = models.AutoField(primary_key = True)
+    dni = models.CharField('DNI cliente', max_length = 9, null = False, blank = False)
+    nombre = models.CharField('Nombre cliente', max_length = 20, null = False, blank = False)
+    apellidos = models.CharField('Apellidos cliente', max_length = 30, null = False, blank = False)
+    telefono = models.CharField('telefono cliente', max_length = 9, null = False, blank = False)
+
+    class Meta:
+        verbose_name = 'Cliente'
+        verbose_name_plural = 'Clientes'
+
+
+
 

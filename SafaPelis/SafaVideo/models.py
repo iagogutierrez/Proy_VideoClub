@@ -19,5 +19,10 @@ class cliente(models.Model):
     nombre = models.CharField('Nombre cliente', max_length = 20, null = False, blank = False)
     apellidos = models.CharField('Apellidos cliente', max_length = 30, null = False, blank = False)
     telefono = models.CharField('telefono cliente', max_length = 9, null = False, blank = False)
-    
+
+    class Meta:
+        verbose_name = 'Cliente'
+        verbose_name_plural = 'Clientes'
+
+
 

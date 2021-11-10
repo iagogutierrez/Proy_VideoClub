@@ -12,3 +12,12 @@ class pelicula(models.Model):
     class Meta:
         verbose_name = 'Película'
         verbose_name_plural = 'Películas'
+
+class cliente(models.Model):
+    idcli = models.AutoField(primary_key = True)
+    dni = models.CharField('DNI cliente', max_length = 9, null = False, blank = False)
+    nombre = models.CharField('Nombre cliente', max_length = 20, null = False, blank = False)
+    apellidos = models.CharField('Apellidos cliente', max_length = 30, null = False, blank = False)
+    telefono = models.CharField('telefono cliente', max_length = 9, null = False, blank = False)
+    
+
